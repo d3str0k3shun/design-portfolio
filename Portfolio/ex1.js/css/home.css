@@ -1,0 +1,285 @@
+html{
+  background-image: url(../ressources/images/rennegan.avif);
+  background-color: rgb(255, 167, 167);
+  background-size: cover;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "body"
+  ;
+
+}
+body{
+  grid-area: body;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "Main"
+  ;
+
+}
+#Main_container{
+  grid-area: Main;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 7fr   1fr;
+  grid-template-areas: 
+  "Haut"
+  "Millieu"
+  
+  "Bas"
+  
+  
+  ;
+
+}
+#Haut{
+  border-radius: 1em;
+  
+  grid-area: Haut;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  ". img . Titre . l1 l2 l3 l4 ."
+  ;
+  background-color: rgb(5, 5, 155);
+  transition: all 2s;
+
+}
+#Haut:hover{
+  transition: all 2s;
+  background-color: black;
+  color: white;
+}
+.img{
+  grid-area: img;
+  
+}
+.Titre{
+  grid-area: Titre;
+  display: flex;
+  flex-direction: end;
+}
+.Lien1{
+  grid-area: l1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  margin:10px;
+  transition: all 2s;
+
+  border-radius: 20px;
+}
+.Lien1:hover{
+  transition: all 2s;
+  background-color: white;
+  border: blue solid 2px;
+
+}
+
+.Lien2{
+  grid-area: l2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  margin:10px;
+
+  border-radius: 20px;
+  transition: all 2s;
+}
+.Lien2:hover{
+  transition: all 2s;
+  background-color: white;
+  border: blue solid 2px;
+}
+.Lien3{
+  grid-area: l3;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  margin:10px;
+ transition: all 2s;
+  border-radius: 20px;
+}
+.Lien3:hover{
+  transition: all 2s;
+  background-color: white;
+  border: blue solid 2px;
+}
+.Lien4{
+  grid-area: l4;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  margin:10px;
+  transition: all 2s;
+
+  border-radius: 20px;
+}
+.Lien4:hover{
+  transition: all 2s;
+  background-color: white;
+  border: blue solid 2px;
+}
+#Millieu{
+  grid-area: Millieu;
+  
+  
+  display: grid;
+  background-image: url(../ressources/images/rennegan.avif);
+  background-size: 98%;
+  background-position-y: center;
+  background-position-x: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  ". . . . ."
+  ". . horloge . ."
+  ". . . . ."
+  "b . b2 . b3"
+  ". . . . ."
+  ;
+
+}
+#horloge{
+  height: 100%;
+  width: 100%;
+  grid-area: horloge;
+  background-color: black;
+  background-size: 100%;
+  box-shadow: 4mm 3mm rgb(253, 121, 121);
+  border: rgb(253, 121, 121) solid 2px;
+  border-radius: 2mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4mm;
+  font-size: 250%;
+  color: red;
+  transition: all 4s;
+  
+
+}
+#horloge:hover{
+  transition: all 4s;
+  background-color: white;
+  color: black;
+  box-shadow: 2mm 1mm black;
+  border: black solid 2px;
+}
+#Bouton{
+  grid-area: b;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 20px;
+  color: white ;
+  box-shadow: 4mm 3mm white;
+  border: white solid 2px;
+  transition: all 2s;
+}
+#Bouton:hover{
+  transition: all 2s;
+  background-color: green;
+  border: black solid 2px;
+  box-shadow: 2mm 1mm black;
+}
+
+#Bouton2{
+  grid-area: b2;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 4mm 3mm white;
+  border: white solid 2px;
+  transition: all 0.5s;
+}
+#Bouton2:hover{
+  transition: all 0.5s;
+  background-color: red;
+  border: black solid 2px;
+  box-shadow: 2mm 1mm black;
+}
+#Bouton3{
+  grid-area: b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 4mm 3mm white;
+  border: white solid 2px;
+  transition:all 2s;
+}
+#Bouton3:hover{
+  transition: all 2s;
+  background-color: green;
+  border: black solid 2px;
+  box-shadow: 2mm 1mm black;
+}
+
+#Bas{ 
+  border-color: black;
+  border-radius: 1em;
+  background-color: grey;
+  grid-area: Bas;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "."
+  "."
+  "texte"
+  "."
+  "."
+  ;
+  transition: all 4s;
+
+}
+#Bas:hover{
+  transition: all 4s;
+  background-color: black;
+  color: white;
+}
+.texte{
+  grid-area: texte;
+  text-align: center;
+  justify-content: center;
+}
+.img{
+  position: cover
+  ;
+}

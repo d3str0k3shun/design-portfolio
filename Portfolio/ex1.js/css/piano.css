@@ -1,0 +1,136 @@
+
+html{
+    background-color: black;
+
+}
+
+
+
+
+.container {  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 0.9fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 9px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gauche gauche gauche Millieu Millieu Millieu Millieu droite droite droite"
+      "a s d e f g h i j k";
+  }
+  
+  .droite {  
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.6fr 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". touche6 . touche7 ."
+      ". touche6 . touche7 ."
+      ". touche6 . touche7 ."
+      ". touche6 . touche7 .";
+    grid-area: droite;
+  }
+  
+  .touche7 { grid-area: touche7; }
+  
+  .touche6 { grid-area: touche6; }
+  
+  .Millieu {  
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 0.7fr 1fr 0.8fr 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". touche3 . touche4 . touche5 ."
+      ". touche3 . touche4 . touche5 ."
+      ". touche3 . touche4 . touche5 .";
+    grid-area: Millieu;
+  }
+  
+  .touche5 { grid-area: touche5; }
+  
+  .touche4 { grid-area: touche4; }
+  
+  .touche3 { grid-area: touche3; }
+  
+  .gauche {  
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.6fr 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". touche1 . touche2 ."
+      ". touche1 . touche2 ."
+      ". touche1 . touche2 .";
+    grid-area: gauche;
+  }
+  
+  .touche2 { grid-area: touche2; }
+  
+  .touche1 { grid-area: touche1; }
+  
+  .a { grid-area: a; }
+  
+  .s { grid-area: s; }
+  
+  .d { grid-area: d; }
+  
+  .e { grid-area: e; }
+  
+  .f { grid-area: f; }
+  
+  .g { grid-area: g; }
+  
+  .h { grid-area: h; }
+  
+  .i { grid-area: i; }
+  
+  .j { grid-area: j; }
+  
+  .k { grid-area: k; }
+  .touchenoire{
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    font-size: 7em;
+  }
+  .touchenoire:hover{
+    box-shadow: rgb(165, 165, 165);
+  }
+  .toucheb{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    font-size: 4em;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .touchenoire a{
+    color: white;
+    align-items: flex-start;
+    font-size: x-small;
+  }
+.key{
+    transition: all 70ms ease;
+    transform: scale(1.2);
+    border-color: orange;
+    box-shadow: 0 0 10px orange;
+    border-radius: 5px;
+}

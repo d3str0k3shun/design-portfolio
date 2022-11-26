@@ -1,0 +1,373 @@
+html{
+    height: 100%;
+    background-image: url(../ressources/images/keltner.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+
+.container {  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1.4fr 0.3fr 1fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . . . . . . . . . . . ."
+      ". A . S . D . F . G . H . J . K . L ."
+      ". . . . . . . . . . . . . . . . . . ."
+      ". . . . . . . . . exit . . . . . . . . .";
+  }
+  
+  #A { grid-area: A; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "T1"
+    "P1"
+    ;
+
+
+}
+#A:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T1{
+    grid-area: T1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P1{
+    grid-area: P1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #S { 
+    grid-area: S; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color:orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T2"
+    "P2"
+    ;
+
+
+}
+#S:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T2{
+    grid-area: T2;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P2{
+    grid-area: P2;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+  
+  #D { grid-area: D; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+   color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T3"
+    "P3"
+
+}
+#D:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T3{
+    grid-area: T3;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P3{
+    grid-area: P3;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #F { grid-area: F;
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T4"
+    "P4"
+
+}
+#F:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T4{
+    grid-area: T4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P4{
+    grid-area: P4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #G { 
+    grid-area: G; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+   color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T5"
+    "P5"
+    ;
+
+}
+#G:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T5{
+    grid-area: T5;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P5{
+    grid-area: P5;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #H { grid-area: H; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T6"
+    "P6"
+
+}
+#H:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T6{
+    grid-area: T6;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P6{
+    grid-area: P6;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #J { 
+    grid-area: J; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T7"
+    "P7";
+
+}
+#J:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T7{
+    grid-area: T7;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P7{
+    grid-area: P7;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #K { 
+    grid-area: K; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T8"
+    "P8";
+
+
+}
+#K:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+}
+.T8{
+    grid-area: T8;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P8{
+    grid-area: P8;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+  #L { 
+    grid-area: L; 
+    border: black solid 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1em;
+   color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 1fr 1fr;
+    grid-template-areas: 
+    "T9"
+    "P9"
+    ;
+  }
+  #L:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+  }
+
+
+
+.T9{
+    grid-area: T9;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.P9{
+    grid-area: P9;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.exit{
+    border: black solid 2px;
+    grid-area: exit;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 1em;
+   color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.exit:hover{
+    transition:  all 1s;
+    background-color: white;
+}
+  
